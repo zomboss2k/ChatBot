@@ -1,0 +1,16 @@
+<table class="table table-striped custab">
+    <thead>
+        <tr>
+            <th>Địa điểm</th>
+            <th>Giá vé</th>
+            <th>Thành Phố</th>
+        </tr>
+    </thead>
+    <tbody>
+        {% for row in attraction %}
+        <tr>
+            <td><a href="/attraction/{{row.id}}">{{row.name}}</a></td>
+            <td>{{row.money}}</td>
+            <td>{{row.address}}</td>
+        </tr>
+        {% endfor %}

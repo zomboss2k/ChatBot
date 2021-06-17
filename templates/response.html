@@ -1,0 +1,7 @@
+{% for row in attractionlist %}
+<tr>
+    <td><a href="/attraction/{{row.id}}">{{row.name}}</a></td>
+    <td>{{row.money}}</td>
+    <td>{{row.address}}</td>
+</tr>
+{% endfor %}

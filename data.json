@@ -1,0 +1,294 @@
+{
+  "intents": [
+    {
+      "tag": "greeting",
+      "patterns": [
+        "helo",
+        "hello bot",
+        "chào bạn.",
+        "chào bot?",
+        "Hola",
+        "Hello",
+        "xin chào",
+        "hi bot",
+        "Hi"
+      ],
+      "responses": {
+        "images": [],
+        "messages": [
+          "Xin chào quý khách! E có thể giúp gì được cho quý khách!!"
+        ]
+      }
+    },
+    {
+      "tag": "tham quan",
+      "patterns": [
+        "bạn có thể giúp tôi tìm địa điểm du lịch hot nhất hiện nay không?",
+        "cho thông thông tin về cái địa điểm du lịch ở Việt Nam đi bot",
+        "bot biết chỗ nào có thể tham quan, du lịch ở Việt Nam không?"
+      ],
+      "responses": {
+        "images": [
+          "database"
+        ],
+        "messages": [
+          "{{row.username}}"
+        ]
+      }
+    },
+    {
+      "tag": "tìm giúp nghỉ ngơi",
+      "patterns": [
+        "tôi muốn đi chỗ nào rộng rãi , thoáng mát, nhiều khu vui chơi thì nên đi đâu hả bot?",
+        "Bot cho tôi thông tin về dịch vụ hay combo đi Đà Nẵng đi bot",
+        "Dịch vụ ở đà nẵng như thế nào bot"
+      ],
+      "responses": {
+        "images": [
+          "database"
+        ],
+        "messages": [
+          "Vâng ạ! Quý khách sẽ có nhiều options ở Đà Nẵng như Combo vé khứ hồi, Xe đưa đón sân bay về khách sạn Đà Nẵng cả đi lẫn về, 2 đêm tại khách sạn 4* Đà Nẵng gần biển, có hồ bơi và buffet sáng 2 bữa, Tour Bà Nà: HDV + xe đưa đón + vé cáp treo 2 chiều + buffet trưa tại nhà hàng+...., Tour Hội An - Ngũ Hành Sơn : HDV + xe đưa đón+ ăn tối tại Hội An + vé tham quan Ngũ Hành Sơn +...., với giá cả phải chăng ạ."
+        ]
+      }
+    },
+    {
+      "tag": "đang muốn đi",
+      "patterns": [
+        "tôi đang muốn đi du lịch",
+        "tôi muốn đi đâu lịch ở Đà Nẵng!",
+        "bạn có thể giúp tôi tìm những địa điểm đẹp nhất tại Đà Nẵng được không?",
+        "cho mình thông tin về Đa Nẵng"
+      ],
+      "responses": {
+        "images": [
+          "https://rosamiahotel.com/FileUpload/Images/bana.jpg",
+          "https://rosamiahotel.com/FileUpload/Images/asia.jpg",
+          "https://rosamiahotel.com/FileUpload/Images/mykhe_3.jpg",
+          "https://rosamiahotel.com/FileUpload/Images/caurong.jpg",
+          "https://rosamiahotel.com/FileUpload/Images/namo_3.jpg",
+          "https://rosamiahotel.com/FileUpload/Images/langvan.jpg",
+          "https://rosamiahotel.com/FileUpload/Images/nguhanhson.jpeg",
+          "https://rosamiahotel.com/FileUpload/Images/chualinhung_2.jpg",
+          "https://rosamiahotel.com/FileUpload/Images/banco_2.jpg"
+        ],
+        "messages": [
+          "Vâng ạ!!Em tìm ra 9 điểm du lịch đẹp ở Đà Nẵng gồm : Bà Nà Hills, Asian Park, Bãi Biển Mỹ Khê, Cầu Rồng, Rạn Nam Ôm, Làng Vân, Ngũ Hành Sơn, Chùa Linh Ứng, Đỉnh Bàn Cờ!!"
+        ]
+      }
+    },
+    {
+      "tag": "tôi không muốn đi",
+      "patterns": [
+        "hiện tại tôi không muốn đi du lịch",
+        "tôi không muốn đi chơi nữa",
+        "tôi không muốn đi chơi",
+        "tôi không "
+      ],
+      "responses": {
+        "images": [
+          "https://www.airedalesprings.co.uk/wp-content/uploads/2016/02/Robot-iStock_000016741093_Medium-1024x1024.jpg"
+        ],
+        "messages": [
+          "Vâng ạ!! Em cảm ơn quý khách đã ghé thăm ạ."
+        ]
+      }
+    },
+    {
+      "tag": "Bà Nà Hills",
+      "patterns": [
+        "Bà Nà Hills",
+        "Bot cho mình biết về Bà Nà Hills đi bot",
+        "bà nà"
+      ],
+      "responses": {
+        "images": [
+          "https://rosamiahotel.com/FileUpload/Images/bana.jpg",
+          "https://rosamiahotel.com/FileUpload/Images/bana_1.jpg",
+          "https://rosamiahotel.com/FileUpload/Images/bana_2.jpg"
+        ],
+        "messages": [
+          "Bà Nà Hills là địa điểm du lịch đầy hấp dẫn của thành phố Đà Nẵng. Đã từ lâu, “ngọn đồi” này được xem là “con át chủ bài” thu hút hàng ngàn lượt khách du lịch đổ về Đà Nẵng mỗi năm, đặc biệt là khách Hàn Quốc. Thuộc hệ thống thương hiệu giải trí Sun World, cách trung tâm thành phố Đà Nẵng hơn 20 km, Sun World Bà Nà Hills là quần thể du lịch nghỉ dưỡng kết hợp vui chơi giải trí đẳng cấp bậc nhất Việt Nam.Là địa điểm du lịch mà bất cứ ai đến du lịch Đà Nẵng cũng đi ít nhất 1 lần. Tọa lạc trên đỉnh núi cao vời vợi, Bà Nà hút hồn du khách với cảnh đẹp như tiên cảnh và cáp treo dài nhất thế giới.Đây cũng được xem là một trong những địa điểm nổi bật nhất Đà Nẵng mà mọi du khách trên thế giới đều muốn đến ít nhất một lần.Đến với Sun World Bà Nà Hills, du khách có cơ hội được thăm quan và trải nghiệm những công trình và điểm đến độc đáo, có một không hai. Một trong những công trình được du khách yêu thích nhất khi đến với Bà Nà Hills là Làng Pháp, nơi tái hiện một nước Pháp cổ kính và lãng mạn với những công trình kiến trúc cổ điển độc đáo như quảng trường, nhà thờ, thị trấn, làng cổ, và khách sạn."
+        ]
+      }
+    },
+    {
+      "tag": "servicesBaNaHilss",
+      "patterns": [
+        "Bot cho mình biết dịch vụ đi Bà Nà Hills đi bot",
+        "dịch vụ ở bà nà hills như thế nào bot nhỉ"
+      ],
+      "responses": {
+        "images": [
+          "https://dulichkhampha24.com/wp-content/uploads/2021/02/combo-ve-ba-na-hills-khuyen-mai.jpg",
+          "https://dulichkhampha24.com/wp-content/uploads/2021/02/combo-ba-na-hills-2.jpg",
+          "https://dulichkhampha24.com/wp-content/uploads/2021/02/combo-ve-ba-na-hill-khuyen-mai.jpg"
+        ],
+        "messages": [
+          "Xe đưa đón tại các địa điểm trong nội thành Đà Nẵng với giờ và điểm đón cố định Check in cầu Vàng ngắm hoàng hôn trên Bà Nà, cảm nhận khung cảnh lãng mạn nơi làng Pháp Quẩy bung nóc tại Fantasy Park với hơn 100 trò chơi miễn phí Hòa vào không khí sôi động của lễ hội bia tươi B’estival tại Beer Plaza Check in các địa điểm nổi tiếng như Hầm rượu Debay, vườn hoa, chùa Linh Ứng Ăn buffet tối hơn 50 món kèm theo 1 lít bia tươi Đức....."
+        ]
+      }
+    },
+    {
+      "tag": "Asian Park",
+      "patterns": [
+        "Asian Park",
+        "asian park",
+        "Công viên châu á",
+        "cho mình biết thêm về công viên châu á đi bot"
+      ],
+      "responses": {
+        "images": [
+          "./static/images/AsianPark.jpg",
+          "https://rosamiahotel.com/FileUpload/Images/asia_1.jpg",
+          "https://rosamiahotel.com/FileUpload/Images/asia_2.jpg"
+        ],
+        "messages": [
+          "Công viên Asia Park Đà Nẵng là một trong những công viên giải trí mang đẳng cấp quốc tế, đáng để đến vui chơi và thăm quan hàng đầu Việt Nam và Đông Nam Á. Công viên giải trí tại Asia Park mang đến hàng loạt trò chơi độc đáo, lần đầu tiên xuất hiện tại Việt Nam.Các trò chơi thường được nhắc đến như tàu lượn siêu tốc, tàu điện trên cao, tháp rơi tự do, máng trượt tốc độ cao… chắc chắn sẽ mang đến cho du khách nhiều trải nghiệm thú vị.Đến với Asian Park bạn sẽ khám phá thế giới vui chơi muôn màu muôn vẻ với các trò chơi cảm giác mạnh hay trò chơi vui nhộn. Bên cạnh đó bạn còn được chìm đắm trong không gian văn hóa đậm bản sắc châu Á. Chắc chắn du khách sẽ được trải nghiệm cảm giác vui chơi thoải mái ở đây.Asia Park bao gồm ba khu vực chính: công viên giải trí ngoài trời hiện đại, công viên văn hóa với các công trình kiến trúc và nghệ thuật thu nhỏ mang tính biểu trưng của 10 quốc gia châu Á, và khu Sun Wheel - nơi giao thoa giữa nét hiện đại và truyền thống"
+        ]
+      }
+    },
+    {
+      "tag": "Bãi Biển Mỹ Khê",
+      "patterns": [
+        "ABãi Biển Mỹ Khê",
+        "Mỹ Khê"
+      ],
+      "responses": {
+        "images": [
+          "https://rosamiahotel.com/FileUpload/Images/mykhe_3.jpg"
+        ],
+        "messages": [
+          "Được mệnh danh là một trong 6 bãi biển đẹp nhất hành tinh nên không thật thiếu sót khi không nhắc đến bãi biển Mỹ Khê. Biển xanh cát vàng mang vẻ đẹp trong trẻo thu hút đông đảo du khách. Chính vì thế khu vực ở đây tập trung rất nhiều nhà hàng khách sạn nhằm phục vụ lượng khách đến Đà Nẵng hàng năm.Có đến 3 khu vực chính của biển được chia ra để phục vụ mọi du khách. Điều này nhằm giảm tải việc du khách tìm về đây trong mùa nắng nóng cao điểm. Đây là bãi biển nhộn nhịp với rất nhiều hoạt động vui chơi giải trí phù hợp với mọi lứa tuổi và nhu cầu của du khách. Với làn nước trong xanh, mọi người có thể hòa mình để tận hưởng cảm giác thư giãn tuyệt đối.Bên cạnh đó, bờ biển dài cùng những chòi lá nhỏ được dựng lên phục vụ hoạt động nghỉ dưỡng của du khách. Đây cũng là địa điểm lý tưởng để những ai có nhu cầu tham gia các trò chơi thể thao trên biển như bóng đá, cầu lông,...Ngay cách không xa bãi biển Mỹ Khê, là con đường “vàng,” con đường đắt nhất của Đà Nẵng. Nói đây là con đường “vàng,” bởi các khu 4,5 sao đẳng cấp quốc tế như ROSAMIA Đà Nẵng Hotel, Furama, khu biệt thự The Ocean Villas, sân golf The Dunnes, khu nghỉ mát Olalani, Silvershores, Fusion Maia, Life resort... đều được xây dựng gần bãi biển Mỹ Khê tuyệt mỹ này"
+        ]
+      }
+    },
+    {
+      "tag": "Cầu Rồng",
+      "patterns": [
+        "Cầu Rồng",
+        "Rồng"
+      ],
+      "responses": {
+        "images": [
+          "https://rosamiahotel.com/FileUpload/Images/caurong.jpg"
+        ],
+        "messages": [
+          "Đà Nẵng được mệnh danh là thành phố của những cây cầu, sở dĩ vì cứ đi vài cây số người ta lại được nhìn thấy một cây cầu ở thành phố này, mà đó không phải là những cây cầu đơn thuần mà chúng có những nét riêng biệt và sự độc đáo khác lạ chưa từng có ở bất cứ nơi đâu ở Việt Nam. Cầu Rồng phun lửa – phun nước là cây cầu nổi tiếng nhất Đà Nẵng bởi hình dáng độc nhất vô nhị của cây cầu và những điều thú vị gắn liền với cây cầu đó.Với vị trí nằm bắc qua dòng sông Hàn, cây cầu sừng sững và nổi bật giữa trung tâm thành phố, khiến bất kỳ người dân Đà Nẵng nào khi nhìn vào cũng thấy tự hào vô cùng. Cây cầu được xây dựng theo kiểu kiến trúc mang hình dạng một con Rồng thời Lý như vươn mình bay ra biển lớn, một ý tưởng vô cùng ý nghĩa thể hiện khát vọng ngày càng phát triển lớn mạnh của thành phố Đà Nẵng và còn tượng trưng cho nghệ thuật kiến trúc mới của Đà Nẵng. Với vị trí nằm bắc qua dòng sông Hàn, cây cầu sừng sững và nổi bật giữa trung tâm thành phố, khiến bất kỳ người dân Đà Nẵng nào khi nhìn vào cũng thấy tự hào vô cùng. Cây cầu được xây dựng theo kiểu kiến trúc mang hình dạng một con Rồng thời Lý như vươn mình bay ra biển lớn, một ý tưởng vô cùng ý nghĩa thể hiện khát vọng ngày càng phát triển lớn mạnh của thành phố Đà Nẵng và còn tượng trưng cho nghệ thuật kiến trúc mới của Đà Nẵng."
+        ]
+      }
+    },
+    {
+      "tag": "Rạn Nam Ô",
+      "patterns": [
+        "Rạn Nam Ô",
+        "nam ô",
+        "Nam ô"
+      ],
+      "responses": {
+        "images": [
+          "https://rosamiahotel.com/FileUpload/Images/namo.jpg"
+        ],
+        "messages": [
+          "Có thể du khách sẽ mê đắm vẻ đẹp yêu kiều quyến rũ của Rạn Nam Ô. Bức tranh biển ở đây đẹp đến nao lòng, khiến du khách quyến luyến không rời. Đến đây thả hồn vào thiên nhiên, thả trôi những lo lắng muộn phiền để được an yên.Bãi Rạn Nam Ô là một bãi tắm hoang sơ nằm phường Hòa Hiệp thuộc quận Linh Chiểu, vị trí cách trung tâm thành phố Đà Nẵng chừng 17km theo hướng tây bắc. Với khách du lịch bụi, bãi Rạn Nam Ô là địa điểm khám phá mới lạ và độc đáo, nhưng với người dân Đà thành thì bãi biển này đã quá quen thuộc bởi đây là nơi dã ngoại yêu thích mỗi độ cuối tuần.Vì chưa ‘xuất hiện’ trong bất cứ lộ trình của tour du lịch nào nên bãi Rạn Nam Ô vẫn giữ được vẻ đẹp nguyên sơ của mình, để người lữ hành có cảm giác như đặt chân đến một vùng đất mới, tha hồ trải nghiệm.Rạn Nam Ô được chia thành hai cụm nhỏ là Rạn Cả và Rạn Con. Rạn Cả rộng chừng 50 và dài khoảng 300m, nổi bật với lớp đá ngầm dày đặc nằm ngổn ngang ngâm mình trong làn nước biển. Rạn Con nhỏ hơn nằm song song so với Rạn Cả, ở giữa là lạch nhỏ mà người dân vẫn gọi là thòng lòng, tạo nên sự khác biệt mới mẻ cho Rạn Nam Ô. Đứng trên các tảng đá lớn, hướng về phía đông, khách du lịch sẽ nhìn thấy bán đảo Sơn Trà, bên bờ Tây là đèo hải vân thấp thoáng ẩn hiện trong làn mây mờ của núi và rừng cây."
+        ]
+      }
+    },
+    {
+      "tag": "Làng Vân",
+      "patterns": [
+        "Làng Vân",
+        "làng vân"
+      ],
+      "responses": {
+        "images": [
+          "https://rosamiahotel.com/FileUpload/Images/langvan.jpg"
+        ],
+        "messages": [
+          "Dưới chân đèo Hải vân, biệt lập với thành phố, địa điểm du lịch Đà Nẵng làng Vân với vẻ đẹp hoang sơ là địa điểm cắm trại yêu thích của giới trẻ.Du lịch làng vân đà nẵng – Làng Vân là một ngôi làng nhỏ nằm nép dưới chân đèo Hải Vân, biệt lập với thành phố Đà Nẵng. Trước đây, Làng Vân là nơi trú ngụ của một bộ phận người bị bệnh phong. Sau khi bệnh phong có thuốc chữa, dân làng trở về hòa nhập với cộng đồng. Đồng thời, Làng Vân trở thành một vẻ đẹp “bí ẩn” kích thích ham muốn khám phá của nhiều người.Nơi đây sở hữu khung cảnh hoang sơ tuyệt đẹp, rất phù hợp cho những chuyến đi cắm trại cuối tuần. Trước đây ngôi làng vốn bị cô lập, nên không có đường đến, chỉ có thể đến làng bằng 3 con đường: lên đỉnh đèo Hải Vân rồi đi theo triền núi xuống, đi thuyền từ ngoài vịnh vào và đi xuyên qua hầm tàu hỏa rồi băng qua nhiều km bụi rậm. Từ điểm gửi xe máy vào đây bạn sẽ phải đi bộ hơn 1 tiếng đồng hồ.Làng Vân Đà Nẵng có vẻ đẹp hoang sơ lôi cuốn dù đã có dấu tích con người sinh sống ở đây. Chính sự hòa hợp giữa phong cảnh hoang sơ và dấu tích những căn nhà hoang tàn đã làm nên vẻ đẹp rất riêng đến “ngơ ngẫn” người nhìn. Làng Vân đang trở thành 1 địa điểm du lịch lý tưởng đang “làm mưa làm gió” tại Đà Nẵng"
+        ]
+      }
+    },
+    {
+      "tag": "Ngũ Hành Sơn",
+      "patterns": [
+        "Ngũ Hành Sơn",
+        "Hành Sơn",
+        "ngũ hành sơn"
+      ],
+      "responses": {
+        "images": [
+          "https://rosamiahotel.com/FileUpload/Images/nguhanhson.jpeg"
+        ],
+        "messages": [
+          "Nằm trên tuyến đường Đà Nẵng – Hội An, Ngũ Hành Sơn là một quần thể gồm 5 núi đá vôi nhô lên trên bãi cát ven biển: Kim Sơn, Mộc Sơn, Thuỷ Sơn, Hoả Sơn và Thổ Sơn, Ngũ Hành Sơn. Núi Ngũ Hành Sơn có cảnh quan hùng vĩ với những ngọn đá rêu phong cổ kính cùng nhiều công trình kiến trúc văn hoá và lịch sử đặc sắc.Với thời tiết trong lành, mát mẻ và phong cảnh đẹp 4 mùa, Ngũ Hành Sơn là một trong những địa điểm du lịch Đà Nẵng hấp dẫn mà bạn có thể thăm quan bất kì lúc nào trong năm. Nếu đi du lịch vào mùa hè thì ngoài Ngũ Hành Sơn, bạn còn có thể kết hợp đi nghỉ mát tại những bãi biển trong khu vực.Những núi đá vôi nằm rải rác trên diện tích khoảng 2km2, gồm: Kim Sơn, Mộc Sơn, Thổ Sơn, Thủy Sơn và Hỏa Sơn. Mỗi ngọn núi có một vẻ đẹp riêng về hình dáng, vị trí, chất liệu đá, về hang động, chùa chiền bên trong.Những dấu tích còn lưu lại cho biết rằng trước khi người Việt đến đây, người Chăm đã thờ cúng các vị thần của họ trong các hang động, đền miếu trên các hòn núi này. Người Việt đến mang theo đạo Phật, lập thêm chùa chiền, am, thất làm tôn thêm tính chất uy nghiêm của một thắng cảnh mà không bài trừ nhau."
+        ]
+      }
+    },
+    {
+      "tag": "Chùa Linh Ứng",
+      "patterns": [
+        "Chùa Linh Ứng",
+        "Linh Ứng",
+        "chùa linh ứng"
+      ],
+      "responses": {
+        "images": [
+          "https://rosamiahotel.com/FileUpload/Images/chualinhung_2.jpg"
+        ],
+        "messages": [
+          "Chùa Linh Ứng Sơn Trà được xem là cõi Phật giữa chốn trần gian. Chùa nằm trên đỉnh núi thuộc Bãi Bụt, bán đảo Sơn Trà, Đà Nẵng (nhiều người gọi là Chùa Linh Ứng Bãi Bụt hoặc là Chùa Linh Ứng Sơn Trà - vì Đà Nẵng có đến 3 Chùa Linh Ứng) hướng nhìn ra biển Đông, một bên là đảo Cù lao Chàm, phía bên kia là ngọn Hải Vân phía còn lại là dòng sông Hàn yên ả đang đổ về cửa biển.Chùa ở độ cao 693 mét so với mực nước biển, với diện tích 20 héc ta, trên địa hình một bên núi, một bên biển. Chùa Linh Ứng Bãi Bụt là một quần thể nhiều hạng mục gồm chánh điện, nhà tổ, giảng đường, tăng đường và thư viện...Ngoài việc được biết đến như một ngôi chùa đẹp, lớn và… trẻ nhất trong 3 ngôi “Linh Ứng Tự” ở Đà Nẵng, Chùa Linh Ứng Bãi Bụt còn được biết đến bỡi nơi có tượng Phật Quan Thế Âm cao nhất Việt Nam.Đến thăm chùa Linh Ứng, du khách thập phương còn có dịp tham quan bức tranh toàn cảnh của một đô thị đang trên đà phát triển mạnh mẽ. Từ chùa phóng tầm mắt về phía biển sẽ thấy bao quanh bởi một màu xanh bát ngát biển trời, bờ cát dài trắng mịn chạy vòng cung theo con đường dưới chân núi lấp lánh dưới cái nắng dịu của vùng bán đảo.Bên trong chánh điện rộng lớn, chính giữa thờ Phật Thích Ca, bên phải là thờ Quán Thế Âm bồ tát, bên trái thờ Địa Tạng Vương bồ tát. Ba pho tượng đều được đúc bằng đồng."
+        ]
+      }
+    },
+    {
+      "tag": "Đỉnh Bàn Cờ",
+      "patterns": [
+        "Đỉnh Bàn Cờ",
+        "Bàn Cờ",
+        "đỉnh bàn cờ"
+      ],
+      "responses": {
+        "images": [
+          "https://rosamiahotel.com/FileUpload/Images/banco_2.jpg"
+        ],
+        "messages": [
+          "Đỉnh Bàn Cờ Đà Nẵng được biết đến như 'nóc nhà' của thành phố biển đẹp nhất miền Trung, là nơi bạn có thể hòa mình vào thiên nhiên ở độ cao 700m, thả hồn giữa trời rộng và ngắm trọn Đà Thành biển xanh cùng những cây cầu bắc ngang sông Hàn 'ngay dưới chân mình'.Chính vì vẻ đẹp đó mà rất nhiều dân phượt khắp mọi nơi đổ về Đà Nẵng để truy tìm xem Đỉnh Bàn Cờ Đà Nẵng ở đâu, và quan tâm đến Đỉnh Bàn Cờ Đà Nẵng  hay đường đi Đỉnh Bàn Cờ Đà Nẵng như thế nào.Hãy cùng khám phá đường lên Đỉnh Bàn Cờ Sơn Trà Đà Nẵng xem cung đường này và điểm đến đó có gì thú vị mà lại khiến “dân tình” điên đảo đến như vậy!.ruyền thuyết kể lại rằng, xưa có 2 vị tiên thường hay đáp xuống đỉnh Sơn Trà chơi cờ nhưng mãi vẫn không phân thắng bại. Bỗng một hôm, chỉ vì ngắm tiên nữ bay xuống bãi biển để tắm, một ông đã lơ là để bị thua và tức giận ném bàn cờ xuống biển rồi bay về trời. Người dân đã dựng lại bàn cờ cùng tượng Đế Thích để ghi dấu ấn cho nơi đặc biệt này, từ đó có tên gọi Đỉnh Bàn Cờ.Không phải tự nhiên mà có truyền thuyết những vị tiên đều ghé đỉnh Sơn Trà – tức Đỉnh Bàn Cờ để thưởng ngoạn và chơi cờ. Đứng giữa khoảng không mênh mông đất trời, vẻ đẹp của Đỉnh Bàn Cờ chắc chắn sẽ khiến bạn “ngẩn ngơ” như lạc vào tiên giới."
+        ]
+      }
+    },
+    {
+      "tag": "bye",
+      "patterns": [
+        "bye",
+        "tạm biệt",
+        "chào bạn",
+        "chào bot",
+        "bye bot",
+        "cảm ơn",
+        "cảm ơn, chào bot nha"
+      ],
+      "responses": {
+        "images": [],
+        "messages": [
+          "Chào quý khách ạ, Chúc quý khách có 1 chuyến đi chơi vui vẻ ạ <3"
+        ]
+      }
+    },
+    {
+      "tag": "",
+      "patterns": [
+        ""
+      ],
+      "responses": {
+        "images": [
+          "./static/images/khonghieu.jpg"
+        ],
+        "messages": [
+          "Xin lỗi Quý khách :( Em không hiểu quý khách nói gì ạ !!",
+          "Quý khách có thể nói lại giúp Em được không ạ :< Em không hiểu quý khách nói gì ạ :<"
+        ]
+      }
+    }
+  ]
+}
